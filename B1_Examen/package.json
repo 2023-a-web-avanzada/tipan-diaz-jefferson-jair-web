@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "inquirer": "^8.0.0",
+    "promt": "^0.0.0"
+  },
+  "name": "b1_examen",
+  "version": "1.0.0",
+  "main": "cine.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

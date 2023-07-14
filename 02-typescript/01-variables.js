@@ -25,5 +25,6 @@ edadMultiple = '2';
 edadMultiple = 'dos';
 edadMultiple = new Date();
 edadMultiple = 2222;
-var numeroUnico = 1; // para igualar a otros se castea
+// var numeroUnico = 1; // para igualar a otros se castea
 numeroUnico = numeroUnico + Math.pow(edadMultiple, 2);
+

@@ -1,0 +1,31 @@
+[
+  {
+    "nombre": "Quicentro",
+    "ubicacion": "Quito",
+    "apertura": "2022-05-12",
+    "enUso": true,
+    "peliculas": [
+      {
+        "titulo": "Avatar",
+        "genero": "Aventura",
+        "duracion": "120",
+        "estreno": "2019-01-02",
+        "calificacion": "PG"
+      }
+    ]
+  },
+  {
+    "nombre": "Recreo",
+    "ubicacion": "Sur,Recreo",
+    "apertura": "2022-05-25",
+    "enUso": true,
+    "peliculas": []
+  },
+  {
+    "nombre": "Supercines",
+    "ubicacion": "Quicentro",
+    "apertura": "2002-01-25",
+    "enUso": false,
+    "peliculas": []
+  }
+]
