@@ -27,5 +27,50 @@
     "apertura": "2002-01-25",
     "enUso": false,
     "peliculas": []
+  },
+  {
+    "nombre": "Multicines",
+    "ubicacion": "Recreo",
+    "apertura": "2010-02-14",
+    "enUso": true,
+    "peliculas": [
+      {
+        "titulo": "Barbie",
+        "genero": "Comedia",
+        "duracion": "120",
+        "estreno": "2023-07-20",
+        "calificacion": "PG"
+      }
+    ]
+  },
+  {
+    "nombre": "Patitas",
+    "ubicacion": "La Carolina",
+    "apertura": "2022-02-15",
+    "enUso": false,
+    "peliculas": [
+      {
+        "titulo": "Blanca Nieves",
+        "genero": "Terror",
+        "duracion": "125",
+        "estreno": "2022-12-15",
+        "calificacion": "PG"
+      }
+    ]
+  },
+  {
+    "nombre": "Quito Cine",
+    "ubicacion": "Quito",
+    "apertura": "2023-01-10",
+    "enUso": false,
+    "peliculas": [
+      {
+        "titulo": "Harry Potter",
+        "genero": "Suspenso",
+        "duracion": "150",
+        "estreno": "2018-05-25",
+        "calificacion": "R"
+      }
+    ]
   }
 ]
