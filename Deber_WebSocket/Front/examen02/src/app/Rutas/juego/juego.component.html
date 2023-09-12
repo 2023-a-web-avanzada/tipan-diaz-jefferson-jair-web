@@ -1,0 +1,72 @@
+<style>
+  #barDelete {
+    overflow-x: hidden;
+  }
+  .list-group{
+    max-height: 300px;
+    margin-bottom: 10px;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+</style>
+
+<div id="barDelete" class="py-5"
+     style="background-color: #fff2c1;">
+
+  <h1 style="display: flex;
+             align-items: center;
+             justify-content: center;">
+    <code><strong>¡CONTINÚA LA PALABRA!</strong></code>
+  </h1>
+
+  <div style="margin-left: 5%;
+              margin-top: 4%"
+      class="row">
+    <div class="card col-7"
+         style="width: 25rem;
+                height: 20rem">
+
+      <div class="card-body">
+        <h4 class="card-title"
+            style="text-align: center">
+          <code>¡Palabras usadas en el juego!</code></h4>
+
+        <div class="card-text" style="padding: 2%">
+          <ul class="list-group">
+            <li class="list-group-item"
+                *ngFor="let palabra of listaPalabras">{{palabra}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col"
+         style="text-align: center;">
+      <h4>Turno de {{jugadorTurno}}</h4>
+      <div class="d-flex justify-content-center"><span class="text-wrap" style="width: 500px;">Coloque una palabra que inicie con las dos últimas letras de <strong>{{ultimaPalabra}}</strong> </span></div>
+      <div *ngIf="formGroup">
+        <form [formGroup]="formGroup">
+          <div style="display: flex;
+             align-items: center;
+             justify-content: center;">
+            <input type="text"
+                   class="form-control"
+                   id="palabra"
+                   style="width: 500px; margin-top: 5%"
+                   formControlName="palabra">
+          </div>
+          <button type="submit"
+                  class="btn btn-warning"
+                  (click)="comprobarNuevaPalabra()"
+                  *ngIf="jugadorTurno === jugadorActual"
+                  style="margin-top: 5%; width: 500px"
+                  [disabled]="formGroup.invalid">Listo</button>
+          <button class="btn btn-danger"
+                  (click)="salirJuego()"
+                  style="margin-top: 5%; width: 500px">Salir</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
